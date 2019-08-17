@@ -7,38 +7,63 @@ header {
     justify-content: center;
     align-items: center;
     background-size: cover;
-    background-color: #181818;
-    position: relative;
+    background-image: linear-gradient(to bottom,rgba(22,22,22,.3) 0,rgba(22,22,22,.7) 75%,#161616 100%), url('/img/bg-masthead.jpg');
 }
 
-.header-photo {
+/* .header-photo {
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.3;
-    z-index: 1;
-}
+} */
 
-h1 {
-    font-size: 4em;
+.header-content > h1 {
+    font-size: 5em;
     background: -webkit-linear-gradient(white, gray);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.header-content {
+.header-content > h2 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #ccc;
+}
 
+.header-content > button {
+    padding: 20px 30px;
+    margin-top: 32px;
+    border-radius: 5px;
+    letter-spacing: 2.5px;
+    background-color: #64A19D;
+    border: 0;
+    color: #eee;
+    font-weight: 600;
 }
 
 .bellow-header {
     display: flex;
     position: static;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(#181818,  #434343);
+    background-image: linear-gradient(#161616,  #434343);
     height: 605px;
     width: 100%;
     padding-top: 10%;
+}
+
+.bellow-header > h2 {
+    color: #ddd;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.bellow-header > p {
+    width: 38%;
+    color: #cccc;
 }
